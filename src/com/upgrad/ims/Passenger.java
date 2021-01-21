@@ -66,56 +66,56 @@ public class Passenger {
         //Nested Contact Class
     private static class Contact {
 
-            private String name;
-            private String phone;
-            private String email;
+        private String name;
+        private String phone;
+        private String email;
 
-            //Constructor
-            public Contact(String name, String phone, String email) {
-                this.name = name;
-                this.phone = phone;
-                this.email = email;
-            }
+        //Constructor
+        public Contact(String name, String phone, String email) {
+            this.name = name;
+            this.phone = phone;
+            this.email = email;
+        }
 
-            //Getters and Setters
+        //Getters and Setters
 
 
-            public String getName() {
-                return name;
-            }
+        public String getName() {
+            return name;
+        }
 
-            public void setName(String name) {
-                this.name = name;
-            }
+        public void setName(String name) {
+            this.name = name;
+        }
 
-            public String getPhone() {
-                return phone;
-            }
+        public String getPhone() {
+            return phone;
+        }
 
-            public void setPhone(String phone) {
-                this.phone = phone;
-            }
+        public void setPhone(String phone) {
+            this.phone = phone;
+        }
 
-            public String getEmail() {
-                return email;
-            }
+        public String getEmail() {
+            return email;
+        }
 
-            public void setEmail(String email) {
-                this.email = email;
-            }
+        public void setEmail(String email) {
+            this.email = email;
+        }
 
-            ///
+        ///
 
-            String getContactDetails(){
-                return "Contact Name: " + this.name+ "Contact Phone: "+ this.phone+ "Contact Email: "+ this.email;
-            }
+        String getContactDetails(){
+            return "Contact Name: " + this.name+ "Contact Phone: "+ this.phone+ "Contact Email: "+ this.email;
+        }
 
-            void updateContactDetails(String contactDetails){
-                String[] newarr = contactDetails.split(",",3);
-                this.name = newarr[0];
-                this.phone = newarr[1];
-                this.email = newarr[2];
-            }
+        void updateContactDetails(String contactDetails){
+            String[] newarr = contactDetails.split(",",3);
+            this.name = newarr[0];
+            this.phone = newarr[1];
+            this.email = newarr[2];
+        }
 
     }
 
