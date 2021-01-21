@@ -6,20 +6,19 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class RegularTicket {
-
-    String pnr;
-    String from;
-    String to;
-    String departureDateTime;
-    String arrivalDateTime;
-    String seatNo;
-    float price;
-    boolean cancelled;
+    private String pnr;
+    private String from;
+    private String to;
+    private String departureDateTime;
+    private String arrivalDateTime;
+    private String seatNo;
+    private float price;
+    private boolean cancelled;
 
     Passenger passenger;
     Flight flight;
 
-    String specialServices;
+    private String specialServices;
 
     //Constructor
     public RegularTicket(String pnr, String from, String to, String departureDateTime, String arrivalDateTime,
@@ -37,6 +36,95 @@ public class RegularTicket {
         this.flight = flight;
         this.specialServices = specialServices;
     }
+
+    //Getters and Setters
+
+
+    public String getPnr() {
+        return pnr;
+    }
+
+    public void setPnr(String pnr) {
+        this.pnr = pnr;
+    }
+
+    public String getFrom() {
+        return from;
+    }
+
+    public void setFrom(String from) {
+        this.from = from;
+    }
+
+    public String getTo() {
+        return to;
+    }
+
+    public void setTo(String to) {
+        this.to = to;
+    }
+
+    public String getDepartureDateTime() {
+        return departureDateTime;
+    }
+
+    public void setDepartureDateTime(String departureDateTime) {
+        this.departureDateTime = departureDateTime;
+    }
+
+    public String getArrivalDateTime() {
+        return arrivalDateTime;
+    }
+
+    public void setArrivalDateTime(String arrivalDateTime) {
+        this.arrivalDateTime = arrivalDateTime;
+    }
+
+    public String getSeatNo() {
+        return seatNo;
+    }
+
+    public void setSeatNo(String seatNo) {
+        this.seatNo = seatNo;
+    }
+
+    public float getPrice() {
+        return price;
+    }
+
+    public void setPrice(float price) {
+        this.price = price;
+    }
+
+    public boolean isCancelled() {
+        return cancelled;
+    }
+
+    public void setCancelled(boolean cancelled) {
+        this.cancelled = cancelled;
+    }
+
+    public Passenger getPassenger() {
+        return passenger;
+    }
+
+    public void setPassenger(Passenger passenger) {
+        this.passenger = passenger;
+    }
+
+    public Flight getFlight() {
+        return flight;
+    }
+
+    public void setFlight(Flight flight) {
+        this.flight = flight;
+    }
+
+    public void setSpecialServices(String specialServices) {
+        this.specialServices = specialServices;
+    }
+
+    ////
 
     String checkStatus(){
         if(cancelled){
